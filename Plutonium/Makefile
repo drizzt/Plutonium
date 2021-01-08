@@ -95,7 +95,7 @@ $(BUILD):
 	@[ -d Output/lib ] || mkdir -p Output/lib
 	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile
 	@rm -rf Output/include
-	@cp -r Include Output/include
+	@cp -pr Include Output/include
 
 #---------------------------------------------------------------------------------
 clean:
